@@ -1,0 +1,75 @@
+﻿@model IEnumerable<HojaConduccion1.Models.Maniobra>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tren)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CocheP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Radio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarIni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraIni)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LugarFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DuracionManiobra)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tren)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CocheP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Radio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarIni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraIni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LugarFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DuracionManiobra)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ManiobraID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ManiobraID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ManiobraID })
+        </td>
+    </tr>
+}
+
+</table>

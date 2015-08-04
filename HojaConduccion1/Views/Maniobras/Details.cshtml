@@ -1,0 +1,82 @@
+﻿@model HojaConduccion1.Models.Maniobra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Maniobra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tren)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tren)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CocheP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CocheP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Radio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Radio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LugarIni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LugarIni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraIni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraIni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LugarFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LugarFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DuracionManiobra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DuracionManiobra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ManiobraID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
