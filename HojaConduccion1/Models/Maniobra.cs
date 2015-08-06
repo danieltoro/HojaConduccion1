@@ -23,11 +23,12 @@ namespace HojaConduccion1.Models
 
         public string LugarFin { get; set; }
 
-        public TimeSpan DuracionManiobra { get; set; }
-
-            public void CalculoDuracionManiobra()
+        public TimeSpan DuracionManiobra
+        {
+            get
             {
-                DuracionManiobra = HoraFin.Subtract(HoraIni);
+                return HoraFin.Subtract(HoraIni);
             }
+        }
     }
 }

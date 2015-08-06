@@ -11,6 +11,7 @@ namespace HojaConduccion1.Migrations
         {
             AutomaticMigrationsEnabled = true;
             ContextKey = "HojaConduccion1.Models.HojaConduccion1Context";
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(HojaConduccion1.Models.HojaConduccion1Context context)
